@@ -1,0 +1,22 @@
+header.header
+	.header__contacts
+		.container
+			.contacts
+				a.contact(href = 'tel:222-33-22')
+					i.fa.fa-mobile.contact__icon(aria-hidden = 'true')
+					span.contact__text 222-33-22
+
+				a.contact(href = 'mailto:ex@ex.net')
+					i.fa.fa-envelope.contact__icon.contact__icon--mail(aria-hidden = 'true')
+					span.contact__text ex@ex.net
+
+				a.fb(href = '#')
+					i.fa.fa-facebook.facebook__icon(aria-hidden = 'true')
+
+	.container
+		.header__nav
+			.logo: img.logo__picture(src = 'images/logo.png' alt = 'logo')
+
+			include nav
+
+			a.button.button__header.button--red(href = '#') Free Consultation

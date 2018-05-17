@@ -1,0 +1,24 @@
+{
+  "name": "landing",
+  "version": "1.0.0",
+  "description": "Simple landing page gulp 4",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "author": "Sergey",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp.spritesmith": "^6.3.0",
+    "rimraf": "^2.6.1"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "normalize.scss": "^0.1.0"
+  }
+}

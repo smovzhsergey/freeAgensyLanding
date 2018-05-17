@@ -1,0 +1,69 @@
+.header {
+
+  &__contacts {
+    background-color: #f0f2f4;
+    border-bottom: 1px solid #e2e2e2;
+  }
+
+  &__nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 31px 0 42px;
+  }
+
+}
+
+.contacts {
+  text-align: right;
+  
+  .contact {
+    color: $main-text-color;
+    display: inline-block;
+    padding: 10px 10px 8px;
+    transition: 0.3s;
+    vertical-align: top;
+
+    &:hover {
+      color: lighten($main-text-color, 30%);
+    }
+
+    &:first-child {
+      border-right: 1px solid #e2e2e2;
+      margin-right: 8px;
+      padding-right: 18px;
+    }
+
+    &__icon {
+      margin-right: 10px;
+      font-size: 1.6rem;
+      vertical-align: middle;
+
+      &--mail {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+}
+
+.facebook__icon {
+  background-color: #1287bf;
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  margin: 7px 0;
+  padding: 5px 8px 3px;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: darken(#1287bf, 10%);
+  }
+}
+
+
+
+
+
+
