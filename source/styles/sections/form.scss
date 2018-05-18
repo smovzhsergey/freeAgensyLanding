@@ -1,0 +1,113 @@
+.form-section {
+  background-color: #1287bf;
+  color: $white-color;
+  padding: 100px 0;
+
+  .title {
+    margin-bottom: 12px;
+
+    &__header {
+      text-transform: capitalize;
+      font-size: 2.25rem;
+    }
+
+    &__text {
+      font-size: 1.25rem;
+    }
+  }
+
+  .btn-down {
+    position: relative;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 2px solid $white-color;
+    margin: auto auto 20px;
+    cursor: pointer;
+
+    .arrow-down {
+      @include centerer-xy();
+
+      .fa {
+        font-size: 2.25rem;
+      }
+    }
+  }
+
+  .form {
+    background: $white-color;
+    position: relative;
+    width: 70%;
+    margin: auto;
+    padding: 50px 50px 70px;
+    color: $main-text-color;
+    border-radius: 5px;
+    text-align: center;
+
+    &-container {
+      padding-top: 30px;
+    }
+
+    &:before {
+
+      @include centerer-x();
+      border: 30px solid transparent;
+      border-bottom: 30px solid $white-color;
+      content: '';
+      top: -59px;
+
+    }
+
+    &__close-button {
+      background-color: $red-color;
+      border: 2px solid $white-color;
+      border-radius: 50%;
+      color: $white-color;
+      font-size: 1.25rem;
+      height: 36px;
+      width: 36px;
+      text-align: center;
+      vertical-align: middle;
+      line-height: 1;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(50%, -50%);
+      transition: 0.3s;
+
+      &:hover {
+        background-color: darken($red-color, 7%);
+      }
+
+    }
+
+    &__text {
+      line-height: 1.4;
+    }
+
+    &__fields {
+      margin: 30px 0;
+    }
+
+    &__input{
+      width: 80%;
+      display: block;
+      margin: auto auto 10px auto;
+      border-radius: 4px;
+      border: 1px solid #d8d8d8;
+      padding: 20px;
+      font-size: 0.875rem;
+
+      &:focus {
+        box-shadow: 0 0 4px 1px rgba(0,0,0,0.5);
+      }
+    }
+
+    .button {
+      border: none;
+      padding: 15px 30px;
+    }
+
+  }
+
+}
