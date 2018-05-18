@@ -1,0 +1,51 @@
+.work {
+  background-color: $red-color;
+  color: $white-color;
+  padding: 100px 0;
+
+  .title--with-bottom-line:after {
+    background-color: $white-color;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+  }
+
+  &__item {
+    width: 256px;
+    height: 253px;
+    background-color: #f35e59;
+    font-weight: bold;
+
+    &--name {
+      padding: 130px 40px 75px;
+      position: relative;
+      text-align: center;
+
+      &:before {
+        @include sprite($work-item);
+        @include centerer-xy();
+        content: '';
+        top: 75px;
+      }
+    }
+  }
+
+  &__name {
+    font-size: 1.625rem;
+  }
+
+  &__description {
+    font-size: 1rem;
+  }
+
+  &__image {
+    height: 100%;
+    width: 100%;
+  }
+
+
+}
