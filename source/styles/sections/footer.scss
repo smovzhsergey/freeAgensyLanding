@@ -1,0 +1,75 @@
+.footer {
+  text-align: center;
+
+  &__top {
+    background-color: #2a2a2a;
+    padding: 85px 0;
+
+  }
+
+  &__bottom {
+    background-color: #515151;
+    padding: 20px;
+    color: #cecece;
+    font-size: 0.875rem;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    color: $white-color;
+    font-family: $ff-main-bold;
+    font-size: 1.8125rem;
+  }
+
+  &__links {
+    margin-bottom: 30px;
+  }
+
+  &__social {
+    color: $white-color;
+    margin-left: 15px;
+    padding: 15px;
+    border-radius: 3px;
+    border: 1px solid #515151;
+
+    &:hover {
+      border-color: $red-color;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  &__text {
+    margin-bottom: 30px;
+    font-size: 0.875rem;
+    color: #cecece;
+  }
+
+  &__field {
+    width: 70%;
+    margin: 0 auto 27px;
+  }
+
+  &__input {
+    background-color: #515151;
+    border: none;
+    color: #cecece;
+    font-size: 0.875rem;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .button {
+    border: 2px solid #515151;
+    padding: 15px 30px;
+    font-family: $ff-main-bold;
+    color: $white-color;
+    background-color: transparent;
+
+    &:hover {
+      border: 2px solid $red-color;
+    }
+  }
+}
